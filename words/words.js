@@ -1,6 +1,5 @@
 String.prototype.words = function() {
-  var regex = /[\w]+/gi
-  return this.match(regex);
+  return this.match(/[\w]+/gi);
 }
 
 module.exports = String.prototype.words;
