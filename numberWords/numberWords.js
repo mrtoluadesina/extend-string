@@ -11,13 +11,17 @@ var numberInWords = {
   9: 'nine'
 }
 String.prototype.numberWords = function() {
-  var number = this.match(/\d/g), strip = /\s$/, result = '';
-  for (var i = 0; i < number.length; i++) {
-    if (numberInWords.hasOwnProperty(number[i])) {
-      result += numberInWords[number[i]] + ' ';
+  var regex = /\d/g, number = this.match(regex), strip = /\s$/, result = '';
+  if (regex.test(this)) {
+    for (var i = 0; i < number.length; i++) {
+      if (numberInWords.hasOwnProperty(number[i])) {
+        result += numberInWords[number[i]] + ' ';
+      } 
     }
+    return result.replace(strip, '');
+  } else {
+    return 'Not a Number';
   }
-  return result.replace(strip, '');
 }
 
 module.exports = String.prototype.numberWords;
