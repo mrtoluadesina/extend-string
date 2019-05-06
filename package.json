@@ -4,7 +4,7 @@
   "description": "### Description A mini prototype based project to extend the String class in Javascript. Using the POP, methods, procedures and instance attributes are added to the String class to support more string manipulation features.",
   "main": "AString.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
