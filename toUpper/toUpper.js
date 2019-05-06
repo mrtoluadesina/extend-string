@@ -7,3 +7,5 @@ String.prototype.toUpper = function() {
   }
   return newString;
 }
+
+module.exports = String.prototype.toUpper;
