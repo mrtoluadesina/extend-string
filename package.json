@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mrtoluadesina/extendString/issues"
   },
-  "homepage": "https://github.com/mrtoluadesina/extendString#readme"
+  "homepage": "https://github.com/mrtoluadesina/extendString#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
