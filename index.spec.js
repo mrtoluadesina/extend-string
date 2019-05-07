@@ -45,3 +45,11 @@ describe('words Method Test', function() {
     expect(thisWord.words()).toEqual(expect.arrayContaining(['I', 'want', 'to', 'make', 'sure', 'this', 'comes', 'back', 'as', 'an', 'array']));
   });
 });
+
+describe('wordsCount Method Test', function() {
+  it('Counts the number of words that appear in a string and return the number', function() {
+    var aString = 'I want to know how many words are in this string';
+    expect(aString.wordsCount()).toBe(11);
+  });
+});
+
