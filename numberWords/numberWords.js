@@ -13,9 +13,11 @@ var numberInWords = {
 String.prototype.numberWords = function() {
   var number = this.match(/\d/g),
       result = '';
-
+  
+  // Check if the inputed value is a number or a string
   if (!((/\d/g).test(this))) return 'Not a Number'; 
 
+  // loop through the numberInWords Object to get the word equivalent of a number
   for (var i = 0; i < number.length; i++) {
       result += numberInWords[number[i]] + ' ';
   }
