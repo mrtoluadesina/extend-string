@@ -9,7 +9,8 @@ describe('hasVowel Method Test', function() {
 
 describe('toUpper Method Test', function() {
   it('Check to know if the string is converted properly to capital letters', function() {
-    var thisiS = 'today is not a weekend', capitalize = 'WEEKENDS ARE THE BEST';
+    var thisiS = 'today is not a weekend', 
+        capitalize = 'WEEKENDS ARE THE BEST';
     expect(thisiS.toUpper()).toMatch(/[A-Z\s]{13}/); // using regex as the matcher for the function
     expect(capitalize.toUpper()).toMatch('WEEKENDS ')
   });
@@ -33,7 +34,8 @@ describe('ucFirst Method Test', function() {
 
 describe('isQuestion Method Test', function() {
   it('Checkss and returns true is a string is a question - that is ends with a ?', function() {
-    var question = 'How are you?', notAQuestion = 'I am fine';
+    var question = 'How are you?', 
+        notAQuestion = 'I am fine';
     expect(question.isQuestion()).toBeTruthy();
     expect(notAQuestion.isQuestion()).toBeFalsy();
   });
@@ -55,7 +57,8 @@ describe('wordsCount Method Test', function() {
 
 describe('toCurrency Method Test', function() {
   it('returns a currency representation of the inputed string', function() {
-    var money = '12569400', notMoney = 'threeten';
+    var money = '12569400', 
+        notMoney = 'threeten';
     expect(money.toCurrency()).toBe('12,569,400.00');
     expect(notMoney.toCurrency()).toBe('NaN');
   });
@@ -84,7 +87,9 @@ describe('alternatingCase Method Test', function() {
 
 describe('numberWords Method Test', function() {
   it('Return the number equivalent of a digit as a string', function() {
-    var aDigit = '325', anotherDigit = '4', noDigit = 'decagon';
+    var aDigit = '325', 
+        anotherDigit = '4', 
+        noDigit = 'decagon';
     expect(aDigit.numberWords()).toBe('three two five');
     expect(anotherDigit.numberWords()).toBe('four'); 
     expect(noDigit.numberWords()).toBe('Not a Number'); 
