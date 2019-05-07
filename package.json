@@ -1,0 +1,22 @@
+{
+  "name": "extendstring",
+  "version": "1.0.0",
+  "description": "### Description A mini prototype based project to extend the String class in Javascript. Using the POP, methods, procedures and instance attributes are added to the String class to support more string manipulation features.",
+  "main": "AString.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtoluadesina/extendString.git"
+  },
+  "author": "Tolu Adesina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrtoluadesina/extendString/issues"
+  },
+  "homepage": "https://github.com/mrtoluadesina/extendString#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
