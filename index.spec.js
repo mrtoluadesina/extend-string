@@ -21,3 +21,27 @@ describe('toLower Method Test', function() {
     expect(owner.toLower()).toMatch(/[a-z\s]{13}/); // using regex as the matcher for the function
   });
 });
+
+describe('ucFirst Method Test', function() {
+  it('Converts the first letter in a string to capital letter', function() {
+    var aString = 'i is going to be converted to capital letter';
+    expect(aString.ucFirst()).toMatch(/^[A-Z][a-z\s]+/);
+    expect(aString.ucFirst()).toMatch(/^I\s[a-z]+/);
+    expect(aString.ucFirst()).toMatch('I is going to be converted to capital letter');
+  });
+});
+
+describe('isQuestion Method Test', function() {
+  it('Checkss and returns true is a string is a question - that is ends with a ?', function() {
+    var question = 'How are you?', notAQuestion = 'I am fine';
+    expect(question.isQuestion()).toBeTruthy();
+    expect(notAQuestion.isQuestion()).toBeFalsy();
+  });
+});
+
+describe('words Method Test', function() {
+  it('Returns individual words in a string', function() {
+    var thisWord = 'I want to make sure this comes back as an array';
+    expect(thisWord.words()).toEqual(expect.arrayContaining(['I', 'want', 'to', 'make', 'sure', 'this', 'comes', 'back', 'as', 'an', 'array']));
+  });
+});
