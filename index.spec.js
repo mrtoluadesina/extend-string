@@ -60,3 +60,17 @@ describe('toCurrency Method Test', function() {
     expect(notMoney.toCurrency()).toBe('NaN');
   });
 })
+
+describe('fromCurrency Method Test', function() {
+  it('returns number from an inputed currency string', function() {
+    var money = '12,569,400';
+    expect(money.fromCurrency()).toBe('12569400.00');
+  });
+});
+
+describe('inverseCase Method Test', function() {
+  it('Checks to make sure the string returned is the direct inverse of the case of the inputed string', function() {
+    var aString = 'This strinG'
+    expect(aString.inverseCase()).toBe('tHIS STRINg');
+  });
+});
