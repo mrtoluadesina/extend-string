@@ -11,7 +11,11 @@ var numberInWords = {
   9: 'nine'
 }
 String.prototype.numberWords = function() {
-  var regex = /\d/g, number = this.match(regex), strip = /\s$/, result = '';
+  var regex = /\d/g, 
+      number = this.match(regex), 
+      strip = /\s$/, 
+      result = '';
+      
   if (regex.test(this)) {
     for (var i = 0; i < number.length; i++) {
       if (numberInWords.hasOwnProperty(number[i])) {
