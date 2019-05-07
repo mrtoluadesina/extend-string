@@ -74,3 +74,10 @@ describe('inverseCase Method Test', function() {
     expect(aString.inverseCase()).toBe('tHIS STRINg');
   });
 });
+
+describe('alternatingCase Method Test', function() {
+  it('Alternate charaters of a string', function() {
+    var aString = 'Onomatopoeia';
+    expect(aString.alternatingCase()).toBe('oNoMaToPoEiA');
+  });
+});
