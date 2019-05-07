@@ -81,3 +81,12 @@ describe('alternatingCase Method Test', function() {
     expect(aString.alternatingCase()).toBe('oNoMaToPoEiA');
   });
 });
+
+describe('numberWords Method Test', function() {
+  it('Return the number equivalent of a digit as a string', function() {
+    var aDigit = '325', anotherDigit = '4', noDigit = 'decagon';
+    expect(aDigit.numberWords()).toBe('three two five');
+    expect(anotherDigit.numberWords()).toBe('four'); 
+    expect(noDigit.numberWords()).toBe('Not a Number'); 
+  });
+})
