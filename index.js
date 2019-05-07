@@ -8,6 +8,9 @@ var wordsCount = require('./wordsCount/wordsCount');
 var toCurrency = require('./toCurrency/toCurrency');
 var fromCurrency = require('./fromCurrency/fromCurrency');
 var inverseCase = require('./inverseCase/inverseCase');
+var alternatingCase = require('./alternatingCase/alternatingCase');
+var numberWords = require('./numberWords/numberWords');
+var isDigit = require('./isDigit/isDigit');
 
 
-module.exports = {hasVowels, toUpper, toLower, ucFirst, isQuestion, words, wordsCount, toCurrency, fromCurrency, inverseCase};
+module.exports = {hasVowels, toUpper, toLower, ucFirst, isQuestion, words, wordsCount, toCurrency, fromCurrency, inverseCase, alternatingCase, numberWords, isDigit};
