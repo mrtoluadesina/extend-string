@@ -89,4 +89,13 @@ describe('numberWords Method Test', function() {
     expect(anotherDigit.numberWords()).toBe('four'); 
     expect(noDigit.numberWords()).toBe('Not a Number'); 
   });
-})
+});
+
+describe('isDigit Method Test', function() {
+  it('Checks that a number is a digit - only one number - and returns true', function() {
+    var trueDigit = '3', 
+        falseDigit = '34';
+    expect(trueDigit.isDigit()).toBeTruthy();
+    expect(falseDigit.isDigit()).toBeFalsy();
+  });
+});
