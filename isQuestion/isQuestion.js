@@ -1,5 +1,5 @@
 String.prototype.isQuestion = function() {
-  var regex = /.+\?$/
+  var regex = /.+\?$/;
   return regex.test(this);
 }
 
