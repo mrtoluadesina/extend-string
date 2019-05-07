@@ -1,4 +1,4 @@
-require('./index');
+require('./helper');
 
 describe('hasVowel Method Test', function() {
   it('Check to see that a string has at least one vowel and returns true, else returns false', function() {
