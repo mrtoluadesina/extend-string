@@ -5,7 +5,7 @@ describe('hasVowel Method Test', function() {
     var oneVowel = 'tolu';
     expect(oneVowel.hasVowels()).toBeTruthy();
   });
-})
+});
 
 describe('toUpper Method Test', function() {
   it('Check to know if the string is converted properly to capital letters', function() {
@@ -13,4 +13,11 @@ describe('toUpper Method Test', function() {
     expect(thisiS.toUpper()).toMatch(/[A-Z\s]{13}/); // using regex as the matcher for the function
     expect(capitalize.toUpper()).toMatch('WEEKENDS ')
   });
-})
+});
+
+describe('toLower Method Test', function() {
+  it('Checks that a string is converted to the lower case value', function() {
+    var owner = 'I OWN DECAGON';
+    expect(owner.toLower()).toMatch(/[a-z\s]{13}/); // using regex as the matcher for the function
+  });
+});
