@@ -17,9 +17,7 @@ String.prototype.numberWords = function() {
   if (!((/\d/g).test(this))) return 'Not a Number'; 
 
   for (var i = 0; i < number.length; i++) {
-    if (numberInWords.hasOwnProperty(number[i])) {
       result += numberInWords[number[i]] + ' ';
-    } 
   }
   return result.replace(/\s$/, '');
 }
