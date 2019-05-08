@@ -51,7 +51,9 @@ Returns the numbers in words e.g 325 should return three two five.
 #### isDigit (typeof Boolean): 
 Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
 
-### To run the project on your local machine
+<br>
+
+## To run the project on your local machine
 
 ```
 npm init
