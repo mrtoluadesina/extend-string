@@ -62,7 +62,7 @@ npm install --save-dev jest
 
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   }
 }
 
