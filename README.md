@@ -50,3 +50,26 @@ Returns the numbers in words e.g 325 should return three two five.
 
 #### isDigit (typeof Boolean): 
 Returns true if the string is a digit(one number) e.g 3 should return true and 34 should return false. This method must implement Regular Expression.
+
+<br>
+
+## To run the project on your local machine
+
+```
+npm init
+
+npm install --save-dev jest
+
+// change the value of test in scripts to jest in your package.json
+
+{
+  "scripts": {
+    "test": "jest --coverage"
+  }
+}
+
+// to test the code 
+
+npm run test
+
+```
